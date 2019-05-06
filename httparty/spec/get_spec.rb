@@ -1,15 +1,14 @@
 
+#require 'HTTParty'
+require_relative '../service/contatos_service.rb'
 
 describe 'fazer umarequisição' do
   
-    it 'get' do
-
-            @melhor_opcao = Contato.get('/contacts/')
-
-            puts @melhor_opcao
-
-
-         
+        it 'get' do
+                      
+            @opcao = Contato.get('/contacts/694')
+            
+            puts @opcao
         
     end
 end
